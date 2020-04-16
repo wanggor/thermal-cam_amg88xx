@@ -1,0 +1,3 @@
+adafruit-circuitpython-amg88xx
+opencv-python
+numpy
