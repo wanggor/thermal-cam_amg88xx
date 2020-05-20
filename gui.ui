@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1027</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>3</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>3</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_frame">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>1</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Konfigurasi</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Value (b)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Output Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Value (a)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Threshold</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_a">
+           <property name="text">
+            <string>1.6</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_b">
+           <property name="text">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_threshold">
+           <property name="text">
+            <string>29</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEdit_output">
+           <property name="text">
+            <string>output200</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="autoScrollMargin">
+          <number>13</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>Cx</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Cy</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>W</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>H</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Area</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="pushButton_stop">
+           <property name="text">
+            <string>Stop n Save</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_start">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
