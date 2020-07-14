@@ -57,9 +57,8 @@ while(cap.isOpened()):
                     data.append([cx,cy, w,h])
                     data.pop(0)
                 
-                cv2.rectangle(frame, (x,y), (x+w,y+h), (255,255,255), 1)
-    # Display the resulting frame
-    print(check_standar_deviation(data, tolerance))
+                if check_standar_deviation(data, tolerance):
+                    cv2.rectangle(frame, (x,y), (x+w,y+h), (255,255,255), 1)
 
     cv2.imshow('Frame',frame)
     cv2.imshow('Frame - Binary',thresh)
