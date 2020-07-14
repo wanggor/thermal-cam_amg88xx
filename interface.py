@@ -98,7 +98,7 @@ class Main(QMainWindow):
             array = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             self.array = np.random.randint(255, size=(200,200),dtype=np.uint8)
             ret, thresh = cv2.threshold(array, int(self.threshold), 255, 0)
-            contour = cv2.findContours(thresh, 1,2)[0]
+            contour = cv2.findContours(thresh, 5,2)[0]
             array = cv2.applyColorMap(array, cv2.COLORMAP_JET)
             if len(contour):
                 for cnt in contour:
